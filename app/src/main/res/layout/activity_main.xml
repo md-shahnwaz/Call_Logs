@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtCallLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="@string/call_logs"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iconRefresh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_refresh_24" />
+
+    <ImageView
+        android:id="@+id/iconSetting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@+id/iconRefresh"
+        android:src="@drawable/baseline_settings_24" />
+
+    <TextView
+        android:id="@+id/callHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCallLogs"
+        android:layout_margin="6dp"
+        android:text="@string/call_history"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callHistory"
+        android:layout_margin="10dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txtMyNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnIncoming"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/black"
+                android:text="@string/incoming"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtCallDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMyNumber"
+                android:layout_margin="6dp"
+                android:text="@string/date_tuesday_12_september_2023_11_12_26_dur_88s"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtNumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCallDetails"
+                android:layout_margin="6dp"
+                android:text="@string/from_919897198971"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <ImageView
+                android:id="@+id/imgMic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:layout_below="@id/txtNumber1"
+                android:src="@drawable/baseline_mic_24" />
+
+            <ImageView
+                android:id="@+id/imgPlay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtNumber1"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="6dp"
+                android:src="@drawable/baseline_play_circle_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtNumber1"
+                android:background="#959493"
+                android:layout_margin="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNumber1"
+                android:layout_margin="6dp"
+                android:layout_toStartOf="@+id/imgPlay"
+                android:layout_toEndOf="@+id/imgMic"
+                android:text="@string/_009504321262455_009504321262_20230912111230_mp3"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView1"
+        android:layout_margin="10dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txtNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 9973191694"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOutgoing"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/black"
+                android:text="OUTGOING"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtCallDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNumber"
+                android:layout_margin="6dp"
+                android:text="@string/date_tuesday_12_september_2023_11_12_26_dur_88s"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCallDetail"
+                android:layout_margin="6dp"
+                android:text="@string/from_919897198971"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:layout_below="@id/txtNumber2"
+                android:src="@drawable/baseline_mic_24" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtNumber2"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="6dp"
+                android:src="@drawable/baseline_play_circle_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtNumber2"
+                android:background="#959493"
+                android:layout_margin="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNumber2"
+                android:layout_margin="6dp"
+                android:layout_toStartOf="@+id/play"
+                android:layout_toEndOf="@+id/mic"
+                android:text="@string/_009504321262455_009504321262_20230912111230_mp3"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView2"
+        android:layout_above="@id/btnUpload"
+        android:layout_margin="8dp"
+        android:padding="6dp"
+        android:src="@drawable/img_black"/>
+
+</RelativeLayout>
